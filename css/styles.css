@@ -202,7 +202,10 @@ footer {
     width: 15vw;
     height: 7vh;
 }
-
+button{
+    width: 15vw;
+    height: 7vh;
+}
 
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
