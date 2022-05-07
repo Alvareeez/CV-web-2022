@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,54 +12,110 @@
     <!-- ícono de pàgina -->
     <!-- fuentes -->
     <!-- javascript -->
+    <script src="./js/main.js"></script>
 </head>
-<body>
-<div class="row">
-    <div class="column-1">
-        <p>1</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>2</p>
-    </div>
-    <div class="column-2">
-        <p>3</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-4">
-        <p>4</p>
-    </div>
-    <div class="column-4">
-        <p>5</p>
-    </div>
-    <div class="column-4">
-        <p>6</p>
-    </div>
-    <div class="column-4">
-        <p>7</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>8</p>
-    </div>
-    <div class="column-2">
-        <p>9</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-3">
-        <p>10</p>
-    </div>
-    <div class="column-3">
-        <p>11</p>
-    </div>
-    <div class="column-3">
-        <p>12</p>
-    </div>
-</div>
 
+<body class="flex">
+    <div>
+        <h1 class="castellano" id="header">David Álvarez CV-2022</h1>
+        <div style="padding-bottom: 5vw;" class="contenedor">
+            <button class="centrado castellano" onclick="english()">Translate to English</button>
+            <button id="ingles" class="centrado ingles" onclick="spanish()">Traducir al castellano</button>
+        </div>
+        <div id="div-body">
+            <div class="row flex">
+                <div class="column-2">
+                    <h1 id="castellano" class="castellano">Quí soc?</h1>
+                    <p id="ingles" class="castellano">Hola, el meu nom es David Álvarez Espluga i vaig neixer el 20/09/2004, desde petit he viscut hospitalet i he cursat tota la primaria i la ESO al mateix institut i ara mateix estic cursant un grau mitja d'informàtica(SMX2)</p>
+                </div>
+                <div class="column-2 flex">
+                    <img id="img-yo" src="./img/yo-1.png" alt="IMG mia">
+                </div>
+            </div>
+            <div class="row flex">
+                <div class="column-2">
+                    <iframe src="https://youtube.com/shorts/hl8-T54L0CA?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="column-2">
+                    <h1 class="align" class="castellano">Aquest és el meu video de presentació</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-3">
+                    <h1 class="castellano" class="align">Primaria</h1>
+                    <p class="padding-p">Jo vaig fer la primariaa l'escola Alpes, que està situada al carrer "Riera de la Creu, 85, 08901 L'Hospitalet de Llobregat, Barcelona" vaig passar tots els cursos sense supendre res i sense repetir, les meves notes van se bones durant
+                        tota la primaria</p>
+                </div>
+                <div class="column-3">
+                    <h1 class="align">ESO</h1>
+                    <p class="padding-p">Un cop acabat la primaria vaig començar a fer la ESO al mateix institut, al col.legi Alpes, igual que a la primaria vaig fer tots els cursos sense repetir, i a primer i segon de eso vaig treure bones notes pero a tercer i quart vaig
+                        començar a empitjora una mica les notes pero vaig aprobar tot igualment</p>
+                </div>
+                <div class="column-3">
+                    <h1 class="align">Grau Mitja</h1>
+                    <p class="padding-p">Ara mateix estic cursant el grau mitja d'informatica, Sistemas microoinformàtics i xarxes(SMX) al institut Joan23 i estic fent el segon any el primer any hem va anar bastant bé, ara estic acabant el segon any i tinc pensat fer un grau
+                        superior al mateix institut</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-1">
+                    <h1 class="align">Ón està el meu institut?</h1>
+                </div>
+                <div class="column-2">
+                    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.1127574472152!2d2.105102514724958!3d41.34990280628234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498d64bd023fd%3A0x26089fc39cb352a3!2sJesu%C3%AFtes%20Bellvitge%20-%20Centre%20d&#39;Estudis%20Joan%20XXIII!5e0!3m2!1sca!2ses!4v1651765020186!5m2!1sca!2ses"></iframe>
+                </div>
+                <div class="column-2">
+                    <img id="school" src="./img/edifici-j23.png" alt="IMG institut J23">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-1">
+                    <h1>La meva experiencia</h1>
+                </div>
+                <div class="column-1">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-1">
+                    <h1>Les meves habilitatas</h1>
+                </div>
+                <div class="column-3">
+                    <p>Excel 60%</p><progress min="0" max="100" value="60" low="30"></progress>
+                    <p>Word 30%</p><progress min="0" max="100" value="30" low="30"></progress>
+                </div>
+                <div class="column-3">
+                    <p>Acces 50%</p><progress min="0" max="100" value="50" low="30"></progress>
+                    <p>Html 80%</p><progress min="0" max="100" value="80" low="30"></progress>
+                </div>
+                <div style="padding-bottom: 10%;" class="column-3">
+                    <p>PowerPoint 30%</p><progress min="0" max="100" value="30" low="30"></progress>
+                    <p>Js 70%</p><progress min="0" max="100" value="70" low="30"></progress>
+                </div>
+            </div>
+            <div class="contenedor">
+                <a target="_blank" href="./img/CV_Nom_Cognom_ÁlvarezEsplugaDavid_organized.pdf" download="CV-DavidÁlvarez">
+                    <button id="color-button" class="centrado">Descargar PDF</button>
+                </a>
+            </div>
+        </div>
+        <br><br><br>
+        <footer>
+            <div class="row">
+                <div class="column-2">
+                    <h1 class="p-footer">Contacrtar amb mi</h1>
+                    <p>Telefon: +34 640262739</p>
+                    <p>Correu: 100007463.joan23@fje.edu</p>
+                </div>
+                <div class="column-2">
+                    <h1 class="h1-footer">Reds Socials</h1>
+                    <p class="p-RD">Instagram: alvareezz20</p>
+                    <p class="p-RD">GitHub: Alvareeez</p>
+                    <p></p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
